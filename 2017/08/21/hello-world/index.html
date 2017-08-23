@@ -24,7 +24,11 @@
     
     
     
+        <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
     
+    
+    
+        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
     
     
     
@@ -138,7 +142,7 @@
 
     <!-- Import CSS & jQuery -->
     
-        <style id="css/material.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/material.min.css","/css/material.min.css?fJTiM/K1J3dWIruo3pxtAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
+        <style id="css/material.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/material.min.css","/css/material.min.css?OIn1KxNfP0863GafcLzuRg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
         <style id="css/style.min.css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("css/style.min.css","/css/style.min.css?oCSEO3ST+aEypEwttTDI9g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";})</script>
         
         
@@ -196,13 +200,13 @@
   #scheme-Paradox .sidebar_archives-count,
   #scheme-Paradox .sidebar-colored .sidebar-header,
   #scheme-Paradox .sidebar-colored .sidebar-badge{
-    background-color: #47484B !important;
+    background-color: #777777 !important;
   }
 
   /* Sidebar User Drop Down Menu Text Color */
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-    color: #47484B !important;
+    color: #777777 !important;
   }
 
   #post_entry-right-info,
@@ -215,25 +219,25 @@
   .sidebar-colored .sidebar-nav > .open > a:hover,
   .sidebar-colored .sidebar-nav > .open > a:focus,
   #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-    color: #47484B !important;
+    color: #777777 !important;
   }
 
   .toTop {
-    background: #47484B !important;
+    background: #777777 !important;
   }
 
   .material-layout .material-post>.material-nav,
   .material-layout .material-index>.material-nav,
   .material-nav a {
-    color: #47484B;
+    color: #777777;
   }
 
   #scheme-Paradox .MD-burger-layer {
-    background-color: #47484B;
+    background-color: #777777;
   }
 
   #scheme-Paradox #post-toc-trigger-btn {
-    color: #47484B;
+    color: #777777;
   }
 
   .post-toc a:hover {
@@ -248,7 +252,12 @@
 
     <style>
       body{
-        background-image: url(/img/custom/bg2.jpg);
+        background-color: #212121;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
       }
     </style>
 
@@ -286,7 +295,13 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Analytics -->
-    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-105144475-1', 'auto');ga('send', 'pageview');
+</script>
 
     <!-- Custom Head -->
     
@@ -417,7 +432,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=https://maxim-hsp.github.io/2017/08/21/hello-world/">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXklEQVR42u3aQZLDMAgEQP//09kHpOIMIMveVPuUg0ty6yAIcLx++jnw8PDw8PDw8PAexjvi5/3983WSXT690/s2PDw8vJ28L1ft25bNK/vDOudHma+Jh4eHt5+Xb5MEjDwArD0CPDw8vKfxqkeQXPGL98XDw8N7GG/yuec7JkECDw8P72m8/A9/jz1JqTfVWvDw8PBiXrUBtvP3Df09PDw8vFNer4mVpNRJMXdtgw0PDw9vDy9vYvVKEtWGWZ6yl4eu8PDw8BbxkvQ6oVbDxnxAAQ8PD+9eXv5ByfbVZtjkWPHw8PDu4k3AeXusWm5opt14eHh4W3jVJlMvOc6DRz5uhYeHh7efl5QPJm/mwwe90nDUAMPDw8PbwusNQuVtsOhDg/Xx8PDw7uJVE+VqWbZXyGiOLODh4eFt5M1LEtWLvtdaw8PDw7uXV/3Dn7e1eoeSF23LM2V4eHh4S3l56pxf2dUixbx4gYeHh7efV72aqw2wPIEehSg8PDy8i3m9cahqkbc3RlANNnh4eHg7eVVAUlxILvRewPiyPh4eHt7FvF5y/Bo/1SCxrEqNh4eHt4hXvdCrja7J+0lYwsPDw9vJyxPl6lhVb4xgQfEXDw8P72LedanwpDxR3RcPDw9vJ696KVeHqPKGVq88gYeHh3cXLwkGk+s+x1TTbjw8PLx7eXkwyEesJqWHZsDAw8PDexhvcgTVYJMfJR4eHt5/4U3wk5DTHB3Aw8PDu4CXFCPmxdl8TCEfIMDDw8Pbz5s3wPLVzt/PVy4EBjw8PLylvN978PDw8PDw8PDwHvD8AQXIKyYlnwjmAAAAAElFTkSuQmCC">
     
 </ul>
     
@@ -442,6 +457,17 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
     
 
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
     
 
     <!-- Share Weibo -->
@@ -512,26 +538,64 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 DISQUS -->
+    <!-- 使用 DISQUS_CLICK -->
 <div id="disqus-comment">
     <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #777777;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
 <script type="text/javascript">
     var disqus_config = function () {
         this.page.url = 'https://maxim-hsp.github.io/2017/08/21/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = 'https://maxim-hsp.github.io/2017/08/21/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
-<script type="text/ls-javascript" id="disqus-thread-script">
-    queue.offer(function() {
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-                s.src = '//maximhsp-blog.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', + new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        });
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//maximhsp-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
 </script>
+  	
 
 </div>
 <style>
@@ -897,10 +961,13 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 
    <!-- 使用 DISQUS js 代码 -->
-<script id="dsq-count-scr" src="//maximhsp-blog.disqus.com/count.js" async></script>
+
 
 
 
