@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>祝叶脑婆生日快乐！！</title>
+  <title>祝睦睦小可爱生日快乐！！</title>
   <link rel="shortcut icon" href="./spark/fav_icon.png" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="./lib/main.css" />
   <link rel="stylesheet" type="text/css" href="./lib/candle.css" />
@@ -247,7 +247,7 @@
       <div class="line" style="display: none"><p>Click Me</p></div>
     </div>
     <!--计时器-->
-    <div id="clock-box" style="display: none"> Maxim <span>与</span> Leaf <span class="STYLE1">互相陪伴的日子已经持续</span>
+    <div id="clock-box" style="display: none"> Maxim <span>与</span> Harper <span class="STYLE1">互相陪伴的日子已经持续</span>
       <div id="clock"></div>
       <div class="clockBorder"></div>
     </div>
@@ -259,29 +259,30 @@
       嘛，不过自己都觉得确实是有些简陋了...<br />
       <br/>
       看，烟花。<br/>
-      说了要放烟花的，也算是兑现承诺了。<br/>
+      想为你放烟花，在市区只能以这种形式了。<br/>
       <br/>
-      不过啊，真是难倒我了啊，又不让送东西，又不让去看你，也不让花钱。<br/>
-      但是我叶生日我肯定是要做些什么才对。<br/>
+      不过啊，真是难倒我了啊，如你所知，被你吐槽过不懂女孩子。<br/>
+      我也不知道应该送些什么，做些什么才好。<br/>
+      只能以我能办到的方式，为你写一点什么东西出来。<br/>
       <br/>
-      只是由于我实在不是很擅长写动效...而且时间很紧，两天时间做成这样已经是尽力了...<br/>
-      请忽视可能诡异的配色和看上去很突兀的文字吧，以后有时间一定会改进的！<br/>
+      只是由于我实在不是很擅长写动效...而且时间很紧，一天时间做成这样已经是尽力了...<br/>
+      请忽视诡异的配色和看上去很突兀的文字吧，以后有时间一定会改进的！<br/>
       <br/>
       总之，生日快乐。<br/>
       这是我为你过的第一个生日，如果能给你带来一点点的温暖那我就满足了。<br/>
       <br/>
-      注意看蛋糕下面的字哦~虽然现在的时间还是很短很短。<br/>
-      但希望我们能够一起把它变长，以后的每次生日希望我也能陪伴你。<br/>
+      注意看蛋糕下面的字哦~虽然现在的时间还是很短。<br/>
+      但希望我们能一起把这个时间变长，以后的每次生日希望我也能陪伴你。<br/>
       <br/>
-      嘛..你也知道我比较木讷，也不会说什么很厉害的情话了。<br/>
-      这次就用你喜欢的诗人，顾城的《门前》结束好了。<br/>
+      嘛..你也知道我比较木讷，也不擅长说什么很厉害的话了。<br/>
+      这次就先借用一下某位作家的诗，假装文艺，《门前》结束好了。<br/>
       <br/>
       点一下 <a href="#" class="gucheng" onclick="nextText()">这里</a> ~
     </div>
     <!--文本主内容 End-->
     <!--文本输出区域 start-->
     <div class="textWrap">
-      <p class="bigText">&nbsp;&nbsp;&nbsp;Happy Birthday My Dear Leaf！！</p>
+      <p class="bigText">&nbsp;&nbsp;&nbsp;Happy Birthday My Lovely Harper！！</p>
       <div id="output-wrap">
         <span id="output"></span>
         <span class="typing-cursor-white">|</span>
@@ -290,7 +291,10 @@
   </div>
   <audio id="bgMusic" loop="loop" preload="auto"  src="https://music.163.com/song/media/outer/url?id=524148933.mp3" type="audio/mp3"></audio>
   <!--页脚-->
-  <footer>By Maxim-HSP. For His Dear Leaf</footer>
+  <footer>
+    <div class="light-btn" onclick="changeBG()">Light</div>
+    By Maxim-HSP. For Lovely Harper
+  </footer>
 </body>
 
 <script type="application/javascript" src="./lib/bg_boom.js"></script>
@@ -299,6 +303,29 @@
 <script type="application/javascript" src="./lib/typing.min.js"></script>
 <script>
   window.onload = function () {
+    // 根据屏幕宽度动态设置content宽度
+    var winWidth = document.body.clientWidth;
+    if (winWidth < 1300) {
+      $(".content").width("90%");
+    }
+    // 点击背景区域全屏
+    $("#spark_bg, .content").on("click", fullScreen);
+    function fullScreen() {
+      var docElm = document.documentElement;
+      if (docElm.requestFullscreen) {
+        docElm.requestFullscreen();
+      }
+      else if (docElm.msRequestFullscreen) {
+        docElm.msRequestFullscreen();
+      }
+      else if (docElm.mozRequestFullScreen) {
+        docElm.mozRequestFullScreen();
+      }
+      else if (docElm.webkitRequestFullScreen) {
+        docElm.webkitRequestFullScreen();
+      }
+    };
+    // 获取蛋糕元素，作播放准备
     var cakeBTN = document.getElementById("cake");
     var bgMusic = document.getElementById("bgMusic");
     var playStatus = false;
@@ -325,7 +352,7 @@
         // 场景切换
         $("body,html").css({background: "#ED9BA6"});
         setTimeout(function() {
-          $(".content").css({background: "rgba(255, 255, 255, 0.16)"});
+          $(".content").css({background: "rgba(255, 255, 255, 0.16)", border: "1px solid #FFFFFF"});
         }, 500);
         $(".line, .line>p").fadeOut("slow");
         // 上移
@@ -350,9 +377,9 @@
     // 计时器设置
     function textAnimate() {
       var together = new Date();
-      together.setFullYear(2018, 02, -5); //时间年月日, 此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
-      together.setHours(15); //小时	
-      together.setMinutes(10); //分钟
+      together.setFullYear(2018, 06, -21); //时间年月日, 此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
+      together.setHours(12); //小时	
+      together.setMinutes(32); //分钟
       together.setSeconds(5); //秒前一位
       together.setMilliseconds(4); //秒第二位
       // 开始计时
@@ -373,7 +400,7 @@
     $(".textWrap").fadeOut(function(){
       $("#source, #output").html("");
       $("#source").html(
-        "我多么希望，有一个门口，<br/> <br/>早晨，阳光照在草上，<br/>我们站着，<br/>扶着自己的门扇，<br/> <br/>门很低，但太阳是明亮的，<br/> <br/>草在结它的种子，<br/>风在摇它的叶子，<br/> <br/>我们站着，不说话，<br/>就十分美好。<br/> <br/>给我，最爱的叶子。<br/> <br/>希望下次就是我当着你的面念了。<br/> <br/>....<br/>END From Your Maxim"
+        "我多么希望，有一个门口，<br/> <br/>早晨，阳光照在草上，<br/>我们站着，<br/>扶着自己的门扇，<br/> <br/>门很低，但太阳是明亮的，<br/> <br/>草在结它的种子，<br/>风在摇它的叶子，<br/> <br/>我们站着，不说话，<br/>就十分美好。<br/> <br/>....<br/> <br/>给，最可爱的睦。<br/> <br/>很幸运， 遇见你。<br/> <br/>....<br/>END. From You Maxim"
       );
       $(".textWrap").fadeIn(function(){
         setTimeout(function() {
@@ -384,7 +411,18 @@
   }
   // 背景切换
   function changeBG() {
-    $("body,html").css({background: "#000000"});
+    console.log($("body").css("background-color"));
+    if($("body").css("background-color") == "rgb(0, 0, 0)") {
+      $("body,html").css({background: "#ED9BA6"});
+      $(".light-btn").css({background: "rgba(0, 0, 0, 0.4)"});
+      $(".content").css({border: "1px solid #FFFFFF"});
+      $("#output-wrap").css({color: "#000"});
+    } else {
+      $("body,html").css({background: "#000000"});
+      $(".light-btn").css({background: "rgba(255, 255, 255, 0.4)"});
+      $(".content").css({border: "0px"});
+      $("#output-wrap").css({color: "#FFF"});
+    }
   }
 </script>
 </html>

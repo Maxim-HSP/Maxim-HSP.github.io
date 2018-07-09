@@ -10,10 +10,24 @@ body {
 }
 footer{
   position: fixed;
-  color: rgba(255, 255, 255, 0.44);
+  color: rgba(255, 255, 255, 0.71);
   font-size: 16px;
   bottom: 10px;
   right: 30px;
+  z-index: 2;
+}
+/*开关灯按钮*/
+.light-btn{
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+  transform: translateX(180%);
+  transition: all 2.5s;
 }
 #clock-box{
   position: absolute;
@@ -43,7 +57,7 @@ footer{
 
 .content {
   position: fixed;
-  width: 50%;
+  min-width: 50%;
   height: 50%;
   top: 50%;
   left: 50%;
@@ -98,14 +112,16 @@ footer{
 }
 #output-wrap {
   text-align: center;
+  color: #000;
+  transition: color 2.5s;
 }
 .gucheng{
   text-decoration: none;
   transition: all .3;
   cursor: pointer;
-  color: aqua;
+  color: #FE1576;
 }
 .gucheng:hover{
-  color: #FE1576;
+  color: aqua;
   font-size: 20px;
 }
