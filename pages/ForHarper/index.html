@@ -307,9 +307,10 @@
     var winWidth = document.body.clientWidth;
     if (winWidth < 1300) {
       $(".content").width("90%");
+    } else {
+      // 点击背景区域全屏，移动端除外
+      $("#spark_bg, .content").on("click", fullScreen);
     }
-    // 点击背景区域全屏
-    $("#spark_bg, .content").on("click", fullScreen);
     function fullScreen() {
       var docElm = document.documentElement;
       if (docElm.requestFullscreen) {
